@@ -612,6 +612,8 @@ static struct rcg_clk gfx3d_clk_src = {
 		.ops = &clk_ops_rcg,
 		VDD_DIG_FMAX_MAP3(LOW, 200000000, NOMINAL, 310000000, HIGH,
 			400000000),
+		VDD_DIG_FMAX_MAP3(LOW, 50000000, NOMINAL, 310000000, HIGH,
+			650000000),
 		CLK_INIT(gfx3d_clk_src.c),
 	},
 };
